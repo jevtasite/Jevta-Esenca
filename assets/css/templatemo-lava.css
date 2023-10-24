@@ -147,7 +147,7 @@ a.main-button-slider {
   font-size: 14px;
   border-radius: 25px;
   padding: 15px 25px;
-  background-color: #fba70b;
+  background-color: #ca3c3c;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -166,7 +166,7 @@ a.main-button {
   font-size: 14px;
   border-radius: 25px;
   padding: 15px 25px;
-  background-color: #f4813f;
+  background-color: #ca3c3c;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -219,7 +219,7 @@ button.main-button:hover {
 
 .center-heading h2 em {
   font-style: normal;
-  color: #f4813f;
+  color: #ca3c3c;
 }
 
 .center-heading p {
@@ -251,11 +251,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fba70b!important;
+  color: #ca3c3c!important;
 }
 
 .background-header .nav li a.active {
-  color: #fba70b!important;
+  color: #ca3c3c!important;
 }
 
 .header-area {
@@ -332,7 +332,7 @@ header
 }
 
 .header-area .main-nav .nav li:hover a {
-  color: #fba70b;
+  color: #ca3c3c;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -397,12 +397,12 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #fba70b;
+  background: #ca3c3c;
 }
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fba70b!important;
+  color: #ca3c3c!important;
   padding-left: 25px;
 }
 
@@ -538,7 +538,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fba70b;
+  color: #ca3c3c;
 }
 
 @media (max-width: 1200px) {
@@ -606,7 +606,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fba70b!important;
+    color: #ca3c3c!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -680,7 +680,7 @@ welcome
 
 .welcome-area .header-text h1 em {
   font-style: normal;
-  color: #fba70b;
+  color: #ca3c3c;
 }
 
 .welcome-area .header-text p {
@@ -760,6 +760,7 @@ about
 .features-item {
   border-radius: 5px;
   padding: 60px 30px;
+  margin-bottom: 45px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
@@ -864,6 +865,7 @@ testimonials
 
 #testimonials {
   padding-top: 100px;
+  padding-bottom: 100px;
   position: relative;
   z-index: 9;
 }
@@ -875,7 +877,6 @@ testimonials
 #testimonials .item .testimonial-content {
   background: rgb(244,129,63);
   background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
-  margin-left: 60px;
   padding: 40px 30px;
   text-align: center;
   border-radius: 5px;
@@ -907,12 +908,7 @@ testimonials
 #testimonials .item .testimonial-content span {
   color: #fff;
   font-weight: 200;
-  font-size: 13px;
-}
-
-#testimonials .author img {
-  max-width: 120px;
-  margin-bottom: -60px;
+  font-size: 20px;
 }
 
 .owl-carousel .owl-nav button.owl-next span {
@@ -978,17 +974,12 @@ footer
 }
 
 footer {
-  margin-top: 200px;
-  padding-top: 120px;
+  padding-top: 60px;
   background-image: url(../images/footer-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
-}
-
-footer .footer-content {
-  padding: 120px 0px;
 }
 
 .contact-form {
@@ -1051,11 +1042,22 @@ footer .right-content {
 
 .footer-content .right-content h2 {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 42px;
   text-transform: capitalize;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #000;
+}
+
+.footer-content .right-content h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 34px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
 }
 
 .footer-content .right-content h2 em {
@@ -1072,7 +1074,7 @@ footer .right-content {
 }
 
 .footer-content .right-content a:hover {
-  color: #FC3;
+  color: #ca3c3c;
 }
 
 footer .social {
@@ -1090,10 +1092,10 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #fff;
+  color: #343a40;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #343a40;
   width: 44px;
   height: 44px;
   line-height: 44px;
@@ -1107,13 +1109,11 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #fba70b;
-  border-color: #fba70b;
-  color: #fff;
+  border-color: #ca3c3c;
+  color:#343a40
 }
 
 footer .copyright {
-  margin-top: 10px;
   font-weight: 400;
   font-size: 15px;
   color: #4a4a4a;
@@ -1128,11 +1128,11 @@ footer .sub-footer {
 }
 
 footer .sub-footer a {
-	color: #FFF;
+	color: #343a40;
 }
 
 footer .sub-footer a:hover {
-	color: #FC3;
+	color: #ca3c3c;
 }
 
 footer .sub-footer p {
@@ -1205,6 +1205,62 @@ preloader
   animation-delay: 0.66666s;
 }
 
+/* NEW ADDED */
+.logo {
+   width: 190px;
+   height: 65px;
+}
+
+.product {
+  font-size: 80px;
+  color: #ca3c3c;
+}
+
+.sproduct {
+  font-size: 80px;
+  color: #ca3c3c;
+  margin-left: 10%;
+}
+
+.sitem {
+   width: 110px;
+   height: 90px;
+   padding: 5px;
+   border-radius: 7px;
+   float: left;
+   margin-right: 25px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sitem-text {
+  font-weight: 700;
+}
+
+#call-p {
+  font-weight: 700;
+  color: #ca3c3c;
+}
+
+.techno {
+  font-size: 100px;
+  color: #000;
+  margin-bottom: 7px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter h2, .counter p {
+  margin-top: 10px;
+}
+
+.counter i {
+  border-bottom: 2px solid #ca3c3c; 
+  padding-bottom: 10px;
+  color: #ca3c3c;
+}
+
 @-webkit-keyframes jumper {
   0% {
     opacity: 0;
@@ -1232,5 +1288,15 @@ preloader
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* CUSTOM RESPONSIVE */
+@media screen and (max-width: 991px) {
+  .logo {
+    margin-right: 100%;
+  }
+  .counter {
+    margin-bottom: 40px;
   }
 }

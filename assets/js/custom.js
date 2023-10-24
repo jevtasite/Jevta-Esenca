@@ -244,3 +244,35 @@
 
 
 })(window.jQuery);
+
+// COUNTER 
+function animateValue(id, start, end, duration, step) {
+	let current = start;
+	const increment = end > start ? step : -step;
+	const element = document.getElementById(id).querySelector("h2");
+	const timer = setInterval(function () {
+	  current += increment;
+	  element.textContent = current;
+	  if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+		clearInterval(timer);
+	  }
+	}, duration);
+  }
+
+  function initializeCounter(id, start, end, duration, step) {
+	const element = document.getElementById(id);
+	const observer = new IntersectionObserver((entries, observer) => {
+	  entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+		  animateValue(id, start, end, duration, step);
+		  observer.unobserve(entry.target);
+		}
+	  });
+	});
+	observer.observe(element);
+  }
+
+  initializeCounter("yearsCounter", 0, 21, 50, 1);
+  initializeCounter("projectsCounter", 0, 608, 50, 10);
+  initializeCounter("hoursCounter", 0, 924000, 10, 2500); 
+  initializeCounter("customersCounter", 0, 1700, 50, 25);
