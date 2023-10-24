@@ -1251,7 +1251,7 @@ preloader
   text-align: center;
 }
 
-.counter h2, .counter p {
+.counter h2 {
   margin-top: 10px;
 }
 

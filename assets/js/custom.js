@@ -247,18 +247,24 @@
 
 // COUNTER 
 function animateValue(id, start, end, duration, step) {
-	let current = start;
-	const increment = end > start ? step : -step;
 	const element = document.getElementById(id).querySelector("h2");
-	const timer = setInterval(function () {
-	  current += increment;
-	  element.textContent = current;
-	  if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
-		clearInterval(timer);
+	const range = end - start;
+	const startTime = performance.now();
+  
+	function updateValue(timestamp) {
+	  const currentTime = timestamp - startTime;
+	  if (currentTime < duration) {
+		const value = start + (range * currentTime) / duration;
+		element.textContent = Math.floor(value);
+		requestAnimationFrame(updateValue);
+	  } else {
+		element.textContent = end;
 	  }
-	}, duration);
+	}
+  
+	requestAnimationFrame(updateValue);
   }
-
+  
   function initializeCounter(id, start, end, duration, step) {
 	const element = document.getElementById(id);
 	const observer = new IntersectionObserver((entries, observer) => {
@@ -271,8 +277,8 @@ function animateValue(id, start, end, duration, step) {
 	});
 	observer.observe(element);
   }
-
-  initializeCounter("yearsCounter", 0, 21, 50, 1);
-  initializeCounter("projectsCounter", 0, 608, 50, 10);
-  initializeCounter("hoursCounter", 0, 924000, 10, 2500); 
-  initializeCounter("customersCounter", 0, 1700, 50, 25);
+  
+  initializeCounter("yearsCounter", 0, 21, 5000, 1);
+  initializeCounter("projectsCounter", 0, 608, 5000, 15);
+  initializeCounter("hoursCounter", 0, 924000, 5000, 3000);
+  initializeCounter("customersCounter", 0, 1700, 5000, 25);
