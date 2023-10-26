@@ -962,9 +962,6 @@ footer
     padding-top: 0px!important;
     margin-top: 0px!important;
   }
-  .contact-form {
-    margin-bottom: 45px;
-  }
   footer .right-content {
     text-align: center;
   }
@@ -1151,7 +1148,7 @@ footer .sub-footer p {
   }
 }
 
-/* 
+
 ---------------------------------------------
 preloader
 --------------------------------------------- 
@@ -1298,5 +1295,15 @@ preloader
   }
   .counter {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  footer .sub-footer {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .right-image-decor {
+    height: 1000px;
   }
 }
